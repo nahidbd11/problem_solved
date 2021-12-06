@@ -6,7 +6,7 @@
  *
  */
 
-function anagram(word, words) {
+function anagrams(word, words) {
   let givenWord = sorted(word);
   let anaObj = {};
   words.forEach((word) => {
@@ -24,4 +24,17 @@ function anagram(word, words) {
 function sorted(word) {
   return word.split("").sort().join("");
 }
-console.log(anagram("khalidd", ["nahid", "khalid", "jahid", "liddkha"]));
+console.log(anagrams("khalidd", ["nahid", "khalid", "jahid", "liddkha"]));
+
+// function sorted(word) {
+//   return word.split("").sort().join("");
+// }
+
+/**HACK:easy solution
+ * 
+ */
+function anagram(word, words) {
+  let output = words.filter((x) => sorted(x) === sorted(word));
+  return output;
+}
+console.log(anagram("nahid", ["idnah"]));
