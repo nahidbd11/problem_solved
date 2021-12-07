@@ -31,7 +31,7 @@ console.log(anagrams("khalidd", ["nahid", "khalid", "jahid", "liddkha"]));
 // }
 
 /**HACK:easy solution
- * 
+ *
  */
 function anagram(word, words) {
   let output = words.filter((x) => sorted(x) === sorted(word));
