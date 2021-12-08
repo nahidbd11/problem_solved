@@ -17,3 +17,5 @@
 // }
 
 // console.log(five(plus(three())));
+
+console.log(typeof +"6.333"); //!+ sign convert and string  to positive number and minuse sign convert an string to negative number
